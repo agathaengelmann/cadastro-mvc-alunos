@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Lista de Matrículas</title>
+</head>
+<body>
+<h1>Matrículas</h1>
+<a th:href="@{/matriculas/nova}">Nova Matrícula</a>
+<br><br>
+
+<table border="1" cellpadding="10">
+    <thead>
+    <tr>
+        <th>ID</th>
+        <th>Aluno</th>
+        <th>Curso</th>
+        <th>Data</th>
+        <th>Status</th>
+        <th>Ação (Alterar Status)</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="m : ${matriculas}">
+        <td th:text="${m.id}"></td>
+        <td th:text="${m.aluno.nome}"></td>
+        <td th:text="${m.curso.nome}"></td>
+        <td th:text="${m.dataMatricula}"></td>
+        <td th:text="${m.status}"></td>
+        <td>
+            <form th:action="@{/matriculas/{id}/status(id=${m.id})}" method="post" style="display:inline;">
+                <select name="status" onchange="this.form.submit()">
+                    <option th:each="s : ${statusMatricula}"
+                            th:value="${s}"
+                            th:text="${s}"
+                            th:selected="${s == m.status}"></option>
+                </select>
+            </form>
+        </td>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>
