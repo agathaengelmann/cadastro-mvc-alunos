@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Lista de Matrículas</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+<body>
+<main class="container">
+    <header class="topo">
+        <div>
+            <h1>Matrículas</h1>
+            <p>Alunos matriculados em cursos</p>
+        </div>
+        <div class="acoes">
+            <a class="botao secundario" th:href="@{/alunos}">Alunos</a>
+            <a class="botao secundario" th:href="@{/cursos}">Cursos</a>
+            <a class="botao" th:href="@{/matriculas/nova}">Nova Matrícula</a>
+        </div>
+    </header>
+
+    <section class="card">
+        <p class="erro" th:if="${erroStatus}" th:text="${erroStatus}"></p>
+
+        <table>
+            <thead>
+            <tr>
+                <th>ID</th>
+                <th>Aluno</th>
+                <th>Curso</th>
+                <th>Data</th>
+                <th>Status</th>
+                <th>Alterar Status</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr th:each="m : ${matriculas}">
+                <td th:text="${m.id}">1</td>
+                <td th:text="${m.aluno.nome}">Ana Souza</td>
+                <td th:text="${m.curso.nome}">Informática para Internet</td>
+                <td th:text="${m.dataMatricula}">2026-09-22</td>
+                <td th:text="${m.status}">ATIVA</td>
+                <td>
+                    <form th:action="@{/matriculas/{id}/status(id=${m.id})}" method="post" style="display:inline;">
+                        <select name="status" onchange="this.form.submit()">
+                            <option th:each="s : ${statusMatricula}"
+                                    th:value="${s}"
+                                    th:text="${s}"
+                                    th:selected="${s == m.status}"></option>
+                        </select>
+                    </form>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+
+        <p class="vazio" th:if="${#lists.isEmpty(matriculas)}">Nenhuma matrícula cadastrada.</p>
+    </section>
+</main>
+</body>
+</html>

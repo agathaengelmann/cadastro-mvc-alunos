@@ -1,0 +1,15 @@
+C:\Users\Aluno\Desktop\projeto-mvc-alunos-20260923T003520Z-1-001\projeto-mvc-alunos\src\main\java\br\com\escola\mvc\controller\AlunoController.java
+C:\Users\Aluno\Desktop\projeto-mvc-alunos-20260923T003520Z-1-001\projeto-mvc-alunos\src\main\java\br\com\escola\mvc\controller\CursoController.java
+C:\Users\Aluno\Desktop\projeto-mvc-alunos-20260923T003520Z-1-001\projeto-mvc-alunos\src\main\java\br\com\escola\mvc\controller\HomeController.java
+C:\Users\Aluno\Desktop\projeto-mvc-alunos-20260923T003520Z-1-001\projeto-mvc-alunos\src\main\java\br\com\escola\mvc\controller\MatriculaController.java
+C:\Users\Aluno\Desktop\projeto-mvc-alunos-20260923T003520Z-1-001\projeto-mvc-alunos\src\main\java\br\com\escola\mvc\model\Aluno.java
+C:\Users\Aluno\Desktop\projeto-mvc-alunos-20260923T003520Z-1-001\projeto-mvc-alunos\src\main\java\br\com\escola\mvc\model\Curso.java
+C:\Users\Aluno\Desktop\projeto-mvc-alunos-20260923T003520Z-1-001\projeto-mvc-alunos\src\main\java\br\com\escola\mvc\model\Matricula.java
+C:\Users\Aluno\Desktop\projeto-mvc-alunos-20260923T003520Z-1-001\projeto-mvc-alunos\src\main\java\br\com\escola\mvc\model\StatusMatricula.java
+C:\Users\Aluno\Desktop\projeto-mvc-alunos-20260923T003520Z-1-001\projeto-mvc-alunos\src\main\java\br\com\escola\mvc\ProjetoMvcAlunosApplication.java
+C:\Users\Aluno\Desktop\projeto-mvc-alunos-20260923T003520Z-1-001\projeto-mvc-alunos\src\main\java\br\com\escola\mvc\repository\AlunoRepository.java
+C:\Users\Aluno\Desktop\projeto-mvc-alunos-20260923T003520Z-1-001\projeto-mvc-alunos\src\main\java\br\com\escola\mvc\repository\CursoRepository.java
+C:\Users\Aluno\Desktop\projeto-mvc-alunos-20260923T003520Z-1-001\projeto-mvc-alunos\src\main\java\br\com\escola\mvc\repository\MatriculaRepository.java
+C:\Users\Aluno\Desktop\projeto-mvc-alunos-20260923T003520Z-1-001\projeto-mvc-alunos\src\main\java\br\com\escola\mvc\service\AlunoService.java
+C:\Users\Aluno\Desktop\projeto-mvc-alunos-20260923T003520Z-1-001\projeto-mvc-alunos\src\main\java\br\com\escola\mvc\service\CursoService.java
+C:\Users\Aluno\Desktop\projeto-mvc-alunos-20260923T003520Z-1-001\projeto-mvc-alunos\src\main\java\br\com\escola\mvc\service\MatriculaService.java
